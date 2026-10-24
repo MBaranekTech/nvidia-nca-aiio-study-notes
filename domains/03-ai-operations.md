@@ -1,5 +1,13 @@
 # Domain 3 — AI Operations (22%)
 
+<p align="center">
+  <img src="../assets/ai-operations.png" alt="Conceptual AI cluster surrounded by monitoring, scheduling, power, thermal, and isolation signals" width="100%">
+</p>
+
+> **Outcome:** Choose appropriate management, monitoring, scheduling, troubleshooting, and virtualization approaches for accelerated infrastructure.
+
+**Blueprint coverage:** data-center management · monitoring · orchestration · job scheduling · GPU metrics · virtualization
+
 ## 1. Observe the whole system
 
 Monitor facilities, nodes, fabric, storage, GPUs, schedulers, and applications. A low GPU-utilization symptom can originate in storage, networking, CPU preprocessing, batch size, synchronization, placement, or the application itself.
@@ -54,3 +62,5 @@ Avoid treating 100% utilization as universally good or low utilization as univer
 2. Why does GPU Operator not replace an autoscaler?
 3. When would MIG be preferable to time-slicing?
 4. What does a scheduler need to place a multi-node job well?
+
+<p align="right"><a href="02-ai-infrastructure.md">← AI Infrastructure</a> · <a href="../README.md">↑ Back to guide</a></p>

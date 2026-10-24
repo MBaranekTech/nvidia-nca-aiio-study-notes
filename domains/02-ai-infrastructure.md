@@ -1,5 +1,13 @@
 # Domain 2 — AI Infrastructure (40%)
 
+<p align="center">
+  <img src="../assets/ai-infrastructure.png" alt="Conceptual accelerated computing cluster with compute, network, storage, power, and cooling paths" width="100%">
+</p>
+
+> **Outcome:** Translate workload requirements into compute, topology, network, storage, facility, and deployment choices.
+
+**Blueprint coverage:** hardware selection · scaling · power and cooling · cloud vs on-premises · clusters · facilities · networking · DPU
+
 ## 1. Start with the workload
 
 Infrastructure choices follow the workload: model size, precision, dataset, batch size, latency target, concurrency, reliability, data locality, compliance, and budget. A bottleneck may be compute, GPU memory capacity, memory bandwidth, interconnect, network, storage, CPU input pipeline, power, or cooling.
@@ -67,3 +75,5 @@ A DPU such as NVIDIA BlueField handles infrastructure services using dedicated c
 2. Which data path fits GPU-to-storage traffic?
 3. Why is rack power not the sum of GPU TDP values?
 4. When might cloud elasticity outweigh a higher steady-state unit cost?
+
+<p align="right"><a href="01-essential-ai-knowledge.md">← Essential AI Knowledge</a> · <a href="../README.md">↑ Guide</a> · <a href="03-ai-operations.md">AI Operations →</a></p>

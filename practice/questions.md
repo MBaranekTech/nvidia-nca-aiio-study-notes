@@ -2,6 +2,8 @@
 
 Choose the best answer. These are independently written study questions, not recalled exam content.
 
+> **Suggested timing:** 18 minutes. Record confidence as well as the answer; a correct guess still identifies a review topic.
+
 1. A training job shows 20% GPU utilization while CPU cores are saturated preparing images. What should be addressed first?
    - A. Add more GPUs
    - B. Optimize or parallelize the input pipeline
@@ -91,3 +93,7 @@ Choose the best answer. These are independently written study questions, not rec
     - B. Optimize service goals, reliability, and useful work per cost using contextual metrics
     - C. Alert on every metric sample
     - D. Avoid collecting application metrics
+
+---
+
+**Finished?** [Check the explanations →](answers.md)

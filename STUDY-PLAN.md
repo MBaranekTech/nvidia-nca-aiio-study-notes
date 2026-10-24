@@ -1,5 +1,15 @@
 # Study Plan
 
+> Pick a route, protect focused study blocks, and spend at least as much time explaining mistakes as taking quizzes.
+
+## Choose your route
+
+| You already operate infrastructure | You are building foundations |
+|---|---|
+| Use the **16-hour fast track** | Use the **four-week foundation track** |
+| Start with a timed diagnostic | Start untimed and build a glossary |
+| Focus on unfamiliar product boundaries | Draw every architecture from memory |
+
 ## Fast track: 16 hours
 
 Use this if you already understand servers, Linux, and basic networking.
@@ -42,3 +52,7 @@ You are close to ready when you can:
 - finish 50 questions with review time remaining;
 - reproduce the cram-sheet comparison tables from memory;
 - recognize when a statement is a common design tendency rather than an absolute rule.
+
+---
+
+**Next:** [Take the diagnostic quiz →](practice/questions.md)

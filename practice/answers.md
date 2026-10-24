@@ -23,3 +23,5 @@
 - **0–9:** work through all domain notes and the official fundamentals course before another timed attempt.
 
 This short quiz does not predict an exam result or cover every blueprint objective.
+
+**Continue:** [Review the cram sheet →](../CRAM-SHEET.md) · [Return to the guide →](../README.md)

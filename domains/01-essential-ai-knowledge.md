@@ -1,5 +1,9 @@
 # Domain 1 — Essential AI Knowledge (38%)
 
+> **Outcome:** Explain the AI lifecycle, compare training with inference, and place each major NVIDIA software component at the correct layer.
+
+**Blueprint coverage:** software stack · training vs inference · AI/ML/DL · use cases · NVIDIA solutions · development lifecycle · CPU vs GPU
+
 ## 1. AI, ML, and DL
 
 - **Artificial intelligence** is the broad goal of systems performing tasks associated with human intelligence.
@@ -40,6 +44,17 @@ Driver + container runtime integration
 GPU / DPU / network hardware
 ```
 
+```mermaid
+flowchart LR
+    A[Prepare data] --> B[Develop]
+    B --> C[Train / fine-tune]
+    C --> D[Validate]
+    D --> E[Optimize]
+    E --> F[Deploy]
+    F --> G[Monitor]
+    G -->|drift or new data| A
+```
+
 Key distinctions:
 
 | Component | Primary role |
@@ -73,3 +88,5 @@ MLOps makes that lifecycle repeatable through versioning, pipelines, registries,
 2. How do TensorRT and Triton differ?
 3. Which state makes training generally more memory-intensive than inference?
 4. Why is “inference always prioritizes latency” an unsafe absolute?
+
+<p align="right"><a href="../README.md">↑ Back to guide</a> · <a href="02-ai-infrastructure.md">Next: AI Infrastructure →</a></p>

@@ -1,9 +1,29 @@
-# NVIDIA NCA-AIIO Study Notes
+<p align="center">
+  <img src="assets/hero.png" alt="Accelerated computing study desk connected to an AI data center" width="100%">
+</p>
 
-An independent, exam-blueprint-aligned guide for the **NVIDIA-Certified Associate: AI Infrastructure and Operations (NCA-AIIO)** certification.
+<h1 align="center">NVIDIA NCA-AIIO Study Notes</h1>
+
+<p align="center">
+  An independent, exam-blueprint-aligned path through AI infrastructure and operations.
+</p>
+
+<p align="center">
+  <a href="https://www.nvidia.com/en-us/learn/certification/ai-infrastructure-operations-associate/"><img alt="Exam NCA-AIIO" src="https://img.shields.io/badge/Exam-NCA--AIIO-76B900?style=flat-square"></a>
+  <img alt="50 questions" src="https://img.shields.io/badge/Questions-50-17212B?style=flat-square">
+  <img alt="60 minutes" src="https://img.shields.io/badge/Time-60_min-17212B?style=flat-square">
+  <a href="LICENSE"><img alt="CC BY 4.0 license" src="https://img.shields.io/badge/License-CC_BY_4.0-00AEEF?style=flat-square"></a>
+</p>
 
 > [!IMPORTANT]
 > This is an unofficial learning resource, not an exam dump. It is not affiliated with or endorsed by NVIDIA. Product capabilities and exam details change; verify them with the linked official sources.
+
+## Start here
+
+| 1. Find your gaps | 2. Learn by domain | 3. Prove understanding |
+|:---:|:---:|:---:|
+| [Take the diagnostic →](practice/questions.md) | [Open the study plan →](STUDY-PLAN.md) | [Try the practical labs →](labs/README.md) |
+| 15 original scenario questions | Fast 16-hour or four-week route | Observation and design exercises |
 
 ## Exam snapshot
 
@@ -18,7 +38,7 @@ Verified **2026-10-22** against the [official certification page](https://www.nv
 | Prerequisite | Basic understanding of data-center infrastructure |
 | Validity | Two years |
 
-### Blueprint and suggested study time
+## Blueprint and suggested study time
 
 | Domain | Exam weight | 16-hour plan |
 |---|---:|---:|
@@ -48,6 +68,20 @@ By the end, you should be able to:
 - distinguish MIG, time-slicing, passthrough, and vGPU;
 - choose meaningful GPU health, utilization, and workload metrics.
 
+## The platform in one picture
+
+```mermaid
+flowchart BT
+    H[GPU · DPU · Network · Storage] --> D[Driver · CUDA · Container Runtime]
+    D --> L[cuDNN · NCCL · Accelerated Libraries]
+    L --> O[TensorRT · Triton · NIM · RAPIDS]
+    O --> W[Training · Inference · Data Science Workloads]
+    M[DCGM · GPU Operator · Schedulers] -. observe and operate .-> D
+    M -. manage .-> W
+```
+
+The exam rewards knowing both the layers and their boundaries: optimization is not serving, monitoring is not scheduling, and GPU enablement is not application autoscaling.
+
 ## Repository map
 
 - [`STUDY-PLAN.md`](STUDY-PLAN.md) — two practical schedules
@@ -61,6 +95,13 @@ By the end, you should be able to:
 ## Integrity and scope
 
 All questions here are original and test public concepts. Do not contribute recalled live-exam questions, proprietary course screenshots, answer dumps, or confidential material. Exact product specifications are deliberately kept out of the core notes unless they illustrate a concept; always verify current product documentation.
+
+<details>
+<summary><strong>Why this guide avoids memorizing long specification tables</strong></summary>
+
+Product limits change across architectures and software releases. The notes teach durable selection cues first, then point to primary documentation for current limits. That makes the guide useful beyond a single exam revision.
+
+</details>
 
 ## License
 
