@@ -18,6 +18,12 @@
 > [!IMPORTANT]
 > This is an unofficial learning resource, not an exam dump. It is not affiliated with or endorsed by NVIDIA. Product capabilities and exam details change; verify them with the linked official sources.
 
+## About this guide
+
+This repository turns the official NCA-AIIO blueprint into a practical learning path for system administrators, DevOps engineers, architects, data-center professionals, and anyone entering accelerated computing. It connects foundational AI concepts with the infrastructure that trains and serves models: GPUs, high-speed networking, storage, power, cooling, orchestration, monitoring, and virtualization.
+
+The emphasis is on **choosing the right technology for a scenario**, not memorizing isolated product facts. Every section is designed to help you distinguish tools that sound similar, locate bottlenecks across the stack, and explain trade-offs in plain language.
+
 ## Start here
 
 | 1. Find your gaps | 2. Learn by domain | 3. Prove understanding |
@@ -67,6 +73,39 @@ By the end, you should be able to:
 - explain DPU offload, acceleration, and isolation;
 - distinguish MIG, time-slicing, passthrough, and vGPU;
 - choose meaningful GPU health, utilization, and workload metrics.
+
+## Top buzzwords and exam cues
+
+Use this as a recognition map. A buzzword is useful only when you can explain the problem it solves and what it does **not** do.
+
+| Buzzword | Plain-English description | Cue to remember |
+|---|---|---|
+| **Accelerated computing** | CPUs and specialized processors work together so parallel workloads run faster. | Heterogeneous system, not “GPU replaces CPU.” |
+| **Training** | A model learns parameters from data using forward and backward passes. | Throughput, memory capacity, collectives, time-to-train. |
+| **Inference** | A trained model produces predictions or generated output. | Latency, serving throughput, efficiency, cost per request. |
+| **CUDA** | NVIDIA's parallel-computing platform, programming model, runtime, and tools. | Foundation beneath GPU-accelerated libraries and applications. |
+| **Tensor Cores** | GPU units optimized for matrix operations and mixed precision. | AI math acceleration, not general cluster management. |
+| **cuDNN** | Accelerated building blocks for deep-neural-network operations. | Framework-level neural-network primitives. |
+| **TensorRT** | Optimizes and executes trained models for efficient inference. | Optimize inference; it is not a scheduler or monitoring tool. |
+| **Triton Inference Server** | Serves models from multiple frameworks with batching and model management. | Model serving and APIs. |
+| **NIM** | Packaged, supported inference microservices with standard APIs. | Faster deployment of optimized inference services. |
+| **NCCL** | Library for collective communication across GPUs and nodes. | All-reduce and distributed training communication. |
+| **NVLink / NVSwitch** | High-bandwidth connectivity among supported GPUs inside a system. | Scale-up communication. |
+| **InfiniBand / Ethernet** | Fabrics connecting nodes, storage, and services across a cluster. | Scale-out communication. |
+| **RDMA / RoCE** | Direct remote-memory access with low CPU overhead; RoCE carries it over Ethernet. | Low-latency data movement across the network. |
+| **GPUDirect RDMA** | A supported PCIe device, commonly a NIC, exchanges data directly with GPU memory. | GPU ↔ NIC/device. |
+| **GPUDirect Storage** | Storage transfers data directly to or from GPU memory on a supported path. | GPU ↔ storage. |
+| **DPU / BlueField** | Dedicated infrastructure processor for networking, storage, and security services. | Offload, accelerate, isolate. |
+| **MIG** | Hardware partitions a supported GPU into isolated instances. | Predictable partitioning and isolation. |
+| **Time-slicing** | Multiple workloads share a GPU by taking turns. | Concurrency without MIG-equivalent memory or fault isolation. |
+| **DCGM** | GPU telemetry, health, diagnostics, topology, and job statistics. | Observe GPU fleets. |
+| **GPU Operator** | Automates the NVIDIA GPU software lifecycle in Kubernetes. | Drivers, device plugin, Container Toolkit, DCGM Exporter—not autoscaling. |
+| **Slurm / Kubernetes** | Schedulers and orchestrators that place and manage workloads. | Resource requests, queues, policy, topology, placement. |
+| **PUE** | Total facility energy divided by IT-equipment energy. | Facility efficiency; closer to 1 is better. |
+| **Data gravity** | Large datasets are costly or slow to move, influencing compute location. | Cloud vs on-premises and storage decisions. |
+| **MLOps** | Repeatable practices for versioning, deploying, monitoring, and governing models. | The complete model lifecycle, not only training. |
+
+> **Fast recall:** DCGM observes, GPU Operator installs and maintains, the scheduler places work, TensorRT optimizes inference, Triton serves models, and NCCL moves collective data.
 
 ## The platform in one picture
 
