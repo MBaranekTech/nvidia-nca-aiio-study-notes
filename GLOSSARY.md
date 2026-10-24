@@ -1,0 +1,24 @@
+# Glossary
+
+- **BMC:** Baseboard management controller used for out-of-band server management.
+- **Collective:** Communication operation across processes/GPUs, such as all-reduce.
+- **CUDA:** NVIDIA parallel-computing platform and programming model.
+- **DCGM:** Data Center GPU Manager for telemetry, diagnostics, and health management.
+- **DPU:** Data processing unit that accelerates and isolates infrastructure services.
+- **ECC:** Error-correcting code memory; detects and corrects certain memory errors.
+- **GPU Operator:** Kubernetes operator for the NVIDIA GPU software stack.
+- **HPC:** High-performance computing.
+- **InfiniBand:** High-throughput, low-latency data-center interconnect supporting RDMA.
+- **MIG:** Multi-Instance GPU; hardware partitioning on supported GPUs.
+- **MLOps:** Practices and tooling for repeatable model development, deployment, and operation.
+- **NCCL:** NVIDIA Collective Communications Library.
+- **NVLink:** High-bandwidth interconnect for supported NVIDIA devices.
+- **NVML:** NVIDIA Management Library, used to monitor and manage GPU devices.
+- **NVSwitch:** Switch fabric enabling high-bandwidth GPU connectivity in supported systems.
+- **PUE:** Power usage effectiveness: total facility energy divided by IT energy.
+- **RDMA:** Remote direct memory access with low CPU involvement.
+- **RoCE:** RDMA over Converged Ethernet.
+- **Slurm:** Workload manager and scheduler common in HPC/AI clusters.
+- **Tensor Core:** GPU execution unit optimized for matrix/tensor operations.
+- **TDP:** Thermal design power; a design input, not a complete facility power estimate.
+- **vGPU:** NVIDIA virtual GPU technology for sharing GPU resources among virtual machines.
